@@ -1,0 +1,239 @@
+
+#services h3,#Portfolio h3,#testomonial h3,#contact h3,#blog h3{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 50px 0;
+    position: relative;
+    z-index: 4;
+}
+#services h3:after,#Portfolio h3:after,#testomonial h3:after,#contact h3:after,#blog h3:after {
+    content: '';
+    width: 150px;
+    height: 30px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -1;
+}
+
+
+/*####### navbar ######*/
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link ,.navbar-nav .nav-link{
+    color:white;
+    font-size: 15px;
+    font-weight: 100px;
+}
+
+
+
+
+
+
+/*####### home #######*/
+#home{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../images/bg.jpg);
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+ }
+
+ #home .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.land-area{
+    text-align: center;
+}
+.land-area h1{
+    color: aliceblue;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+#home .land-icon ul{
+    list-style-type: none;
+
+}
+
+#home .land-icon li i{
+   border-radius: 50%;
+   background-color: rgba(0,0,0,0.5);
+}
+
+
+/* ####about ####*/
+
+#about .item .progress{
+    background-color: rgb(228, 229, 229);
+    height: 22px;
+}
+
+#about .img-about {
+    padding: 0 0 0 30px;
+    position: relative;
+  }
+  #about .img-about:after {
+    content: '';
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+  }
+
+#about .item .progress .inner-prog{
+height: inherit;
+background-color:black;
+}
+
+#about .about-area h3{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*##### Services #####*/
+
+
+
+#services{
+    background-color: rgb(237, 239, 239);
+    padding: 60px 0;
+}
+
+#services .item i{
+    background: #f4f4f4;
+    border-radius: 50%;
+    transition: all .5s;
+  }
+
+#services .item:hover i {
+    background: #1c1c1c;
+    color: #eee;
+  }
+
+
+  /* #### protofolio #####*/
+
+#aaa .list-text li{
+    list-style-type: none;
+    border-radius: 50%;
+    transition: all 0.3s;
+    color: #eee;
+    background-color: #1c1c1c;
+    margin: 0 2px;
+    font-size: 13px;
+}
+
+#aaa .list-text li:hover{
+    color:black;
+    background-color: #eee;
+    border: 1px solid black;
+}
+
+
+#aaa .list-text{
+    opacity: 0;
+    transition: all 0.4s;
+    width: 97%;
+    height: 97%;
+}
+
+#aaa .list:hover .list-text{
+    opacity: 0.9;
+    background-color: white;
+}
+
+.nav-pills {
+    
+    --bs-nav-pills-border-radius: 0.375rem;
+    --bs-nav-pills-link-active-color: black;
+    --bs-nav-pills-link-active-bg: #fff;
+    
+}
+.nav-pills{
+   --bs-nav-link-color: black; 
+   --bs-nav-link-hover-color: black;
+}
+
+
+  
+
+
+/*###### testomonial #######*/
+
+.carousel-item img{
+    width: 140px;
+ }
+ #testomonial{
+    background-color: rgb(237, 239, 239);
+    padding: 60px 0;
+}
+#testomonial .carousel-indicators [data-bs-target] {
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+}
+
+#testomonial .carousel-indicators{
+    bottom: -50px;
+}
+
+#testomonial .carousel-indicators [data-bs-slide-to="0"],.carousel-indicators [data-bs-slide-to="1"],.carousel-indicators [data-bs-slide-to="2"]{
+    background-color: #1c1c1c;
+}
+
+
+/*##### blog ####*/
+#blog{
+    background-color: rgb(237, 239, 239);
+    padding: 60px 0;
+}
+
+#blog .card img:hover{
+    transition: all 0.5s;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); 
+}
+#blog .img-card{
+    display: block;
+    overflow: hidden;
+  }
+  #blog .carousel-indicators [data-bs-target] {
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+}
+
+#blog .carousel-indicators{
+    bottom: -50px;
+}
+ 
+
+
+/* ##### contact #####*/
+
+#contact .item-cont i{
+    border-radius: 50%;
+    background-color: #e4e2e2;
+    transition: all 0.3s;
+}
+
+#contact .item-cont:hover i{
+    background-color: #1c1c1c;
+    color: #eee;
+}
+
+
+.bord{
+    height: 100px;
+    
+}
